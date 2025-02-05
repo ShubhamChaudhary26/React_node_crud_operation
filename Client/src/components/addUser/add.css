@@ -1,0 +1,147 @@
+/* Main container styling */
+.addUser {
+    width: 40%;
+    max-width: 450px;
+    background: #ffffff;
+    color: #333;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    margin: 50px auto;
+    padding: 40px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Back link styling */
+.addUser a {
+    display: inline-block;
+    text-decoration: none;
+    color: #6a11cb;
+    background: rgba(106, 17, 203, 0.1);
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    transition: all 0.3s;
+}
+
+.addUser a:hover {
+    background: rgba(106, 17, 203, 0.2);
+}
+
+/* Title styling */
+.addUser h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+/* Form styling */
+.addUserForm {
+    margin-top: 10px;
+}
+
+/* Input Group */
+.addUserForm .inputGroup {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 18px;
+}
+
+/* Labels styling */
+.addUserForm .inputGroup label {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+/* Input styling */
+.addUserForm .inputGroup input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+    background: #f9f9f9;
+    transition: all 0.3s;
+}
+
+.addUserForm .inputGroup input::placeholder {
+    color: #aaa;
+}
+
+.addUserForm .inputGroup input:focus {
+    border-color: #6a11cb;
+    background: #fff;
+    box-shadow: 0 0 8px rgba(106, 17, 203, 0.2);
+}
+
+/* Button styling */
+.addUserForm .inputGroup button {
+    width: 100%;
+    border: none;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 14px;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(106, 17, 203, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.addUserForm .inputGroup button:hover {
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+    transform: translateY(-2px);
+}
+
+/* --- Fully Optimized Mobile Styling --- */
+@media screen and (max-width: 768px) {
+    .addUser {
+        width: 90%;
+        max-width: 400px;
+        padding: 30px;
+        margin: 30px auto;
+    }
+
+    .addUserForm .inputGroup input {
+        padding: 14px;
+        font-size: 15px;
+        border-radius: 6px;
+    }
+
+    .addUserForm .inputGroup button {
+        padding: 14px;
+        font-size: 15px;
+        border-radius: 6px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .addUser {
+        width: 95%;
+        max-width: 360px;
+        padding: 25px;
+        margin: 20px auto;
+        border-radius: 10px;
+    }
+
+    .addUserForm .inputGroup input {
+        padding: 16px;
+        font-size: 14px;
+        border-radius: 5px;
+    }
+
+    .addUserForm .inputGroup button {
+        padding: 16px;
+        font-size: 14px;
+        border-radius: 5px;
+    }
+}
