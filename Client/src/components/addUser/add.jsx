@@ -21,7 +21,7 @@ const Add = () => {
   const submitForm = async (e) => {
     e.preventDefault();
     await axios
-      .post("http://localhost:3000/api/create", user)
+      .post("https://backend-crud-gpnf.onrender.com", user)
       .then((Response) => {
         toast.success(Response.data.msg);
         navigate('/')
