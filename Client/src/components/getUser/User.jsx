@@ -10,15 +10,15 @@ const User = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await axios.get("http://localhost:3000/api/getall");
+      const response = await axios.get("https://backend-crud-gpnf.onrender.com");
       setUsers(response.data);
     };
 
     fetchData();
   }, []);
-
+  
   const deleteUser =async(userID)=>{
-    await axios.delete(`http://localhost:3000/api/delete/${userID}`)
+    await axios.delete(`https://backend-crud-gpnf.onrender.com/api/delete/${userID}`)
     .then((response)=>{
       setUsers((prevValue)=>prevValue.filter((user)=>user._id !== userID))
       console.log(response);
