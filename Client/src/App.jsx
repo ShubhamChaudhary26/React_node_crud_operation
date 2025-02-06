@@ -1,6 +1,6 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import './App.css'
-import User from './components/getUser/user'
+import User from './components/getUser/User'
 import Add from './components/addUser/add'
 import Edit from './components/updateUser/edit'
 
