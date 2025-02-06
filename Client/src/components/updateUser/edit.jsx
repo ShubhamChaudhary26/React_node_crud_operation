@@ -22,7 +22,7 @@ const Edit = () => {
   };
   useEffect(() => {
     axios
-    .get(`http://localhost:3000/api/getone/${id}`)
+    .get(`https://backend-crud-gpnf.onrender.com/api/getone/${id}`)
     .then((response) => {
         setUser(response.data);
       })
@@ -33,7 +33,7 @@ const Edit = () => {
     const SubmitForm = async (e) => {
       e.preventDefault();
       await axios
-      .put(`http://localhost:3000/api/update/${id}`, user)
+      .put(`https://backend-crud-gpnf.onrender.com/api/update/${id}`, user)
       .then((response) => {
         toast.success(response.data.msg)
         navigate('/')
